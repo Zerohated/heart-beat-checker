@@ -1,0 +1,24 @@
+AppName = "heart-beat-checker"
+Port = ":8080"
+Stage = "test"
+
+URL = "http://localhost:8080/"
+
+EmailNotifyList = [
+    "david.chou93@gmail.com",
+]
+
+[BasicAuth]
+Account = "user"
+Password = "qweASD!@#"
+
+[Limiter]
+Limit = 1
+Burst = 500
+
+[PostgresConf]
+Host = "localhost"
+Port = "5432"
+User = "david"
+DBName = "localtest"
+Password = "Start123"

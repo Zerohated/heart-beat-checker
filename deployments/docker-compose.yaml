@@ -1,0 +1,9 @@
+version: "3.2"
+services: 
+    heart-beat-checker:
+        image: registry.cn-hangzhou.aliyuncs.com/metro/heart-beat-checker
+        volumes: 
+            - ./log:/app/log
+            - /etc/localtime:/etc/localtime:ro
+            - /etc/hosts:/etc/hosts:ro
+        entrypoint: /app/run
